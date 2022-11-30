@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#__next {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #fafbff;
+  color: #58686e;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.ripple {
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.ripple:hover::before {
+  opacity: 0.05;
+}
+
+.ripple:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: #ffffff;
+  opacity: 0;
+  transition: transform 0.1s, opacity 0.1s;
+  overflow: hidden;
+  border-radius: inherit;
+  user-select: none;
+}
+.ripple.dark:before {
+  background: #414141;
+}
+.ripple:active:before {
+  opacity: 0.15;
+}
+.ripple:after {
+  overflow: hidden;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-color: #ffffff;
+  opacity: 0;
+  transition: transform 0.1s, opacity 0.1s;
+  border-radius: inherit;
+  user-select: none;
+}
+.ripple.dark:after {
+  background-color: #414141;
+}
+.ripple:active:after {
+  opacity: 0.15;
+  transition: 0s;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: #1b1b1b;
+  }
+}

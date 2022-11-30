@@ -1,0 +1,15 @@
+.root {
+  position: fixed;
+  width: 100vh;
+  height: 100vh;
+  top: calc(50% - 50vh);
+  left: -55vh;
+
+  @media only screen and (max-width: 600px) {
+    width: 50vh;
+    height: 50vh;
+    top: calc(50% - 25vh);
+    left: -25vh;
+    transition: all 0.2s;
+  }
+}
