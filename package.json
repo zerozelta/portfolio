@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 2999",
+    "start": "next start -p 3000",
     "lint": "next lint",
     "prettier": "npx prettier --write \"src/**/*.(ts|tsx)\" \"pages/**/*.(ts|tsx)\""
   },
