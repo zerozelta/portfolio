@@ -40,13 +40,13 @@ export default function Home() {
         style={{ bottom: 40 }}
       >
         <div className="flex gap-4 text-slate-600 ">
-          <a href="https://github.com/zerozelta" target={"_blank"}>
+          <a href="https://github.com/zerozelta" target={"_blank"} rel="noreferrer">
             <FontAwesomeIcon
               icon={faGithub}
               style={{ width: 30, height: 30 }}
             ></FontAwesomeIcon>
           </a>
-          <a href="https://www.linkedin.com/in/aldo-cesar/" target={"_blank"}>
+          <a href="https://www.linkedin.com/in/aldo-cesar/" target={"_blank"} rel="noreferrer">
             <FontAwesomeIcon
               icon={faLinkedin}
               style={{ width: 30, height: 30 }}

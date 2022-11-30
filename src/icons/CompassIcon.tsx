@@ -17,4 +17,6 @@ const CompassIcon = forwardRef((props: any, ref) => (
   </svg>
 ));
 
+CompassIcon.displayName = "CompassIcon"
+
 export default CompassIcon;
