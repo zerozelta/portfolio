@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p 2999",
+    "lint": "next lint",
+    "prettier": "npx prettier --write \"src/**/*.(ts|tsx)\" \"pages/**/*.(ts|tsx)\""
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
