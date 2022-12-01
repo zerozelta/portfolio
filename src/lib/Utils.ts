@@ -17,3 +17,7 @@ export const isMobile = () => {
 
 export const random = (min: number, max: number) =>
   Math.floor(Math.random() * (max - min)) + min;
+
+export const fetchJSON = async (url: string) => {
+  return (await fetch(url)).json();
+};

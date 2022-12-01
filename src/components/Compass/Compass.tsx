@@ -7,7 +7,7 @@ import { isMobile, random } from "../../lib/Utils";
 
 type CompassProps = {};
 
-const Compass = ({ }: CompassProps) => {
+const Compass = ({}: CompassProps) => {
   const degrees = useRef(90);
   const lastScrollTop = useRef(0);
 
@@ -17,7 +17,6 @@ const Compass = ({ }: CompassProps) => {
   }));
 
   const SVGRef = useRef<HTMLElement>();
-
 
   useEffect(() => {
     var offset = SVGRef.current!.getBoundingClientRect();

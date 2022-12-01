@@ -4,21 +4,33 @@
         "data":[
             {
                 "name":"JavaScript",
-                "url":"/static/img/skills/javascript.png",
+                "url":"/static/img/skills/js.png",
                 "level": 3,
                 "years": 5
+            },
+            {
+                "name":"TypeScript",
+                "url":"/static/img/skills/ts.png",
+                "level": 3,
+                "years": 4
+            },
+            {
+                "name":"ReactJS",
+                "url":"/static/img/skills/reactjs.png",
+                "level": 3,
+                "years": 4
+            },
+            {
+                "name":"GraphQL",
+                "url":"/static/img/skills/graphql.png",
+                "level": 2,
+                "years": 1
             },
             {
                 "name":"NodeJS",
                 "url":"/static/img/skills/nodejs.png",
                 "level": 2,
                 "years": 3
-            },
-            {
-                "name":"TypeScript",
-                "url":"/static/img/skills/java.png",
-                "level": 3,
-                "years": 4
             },
             {
                 "name":"Java",
