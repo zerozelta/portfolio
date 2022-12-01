@@ -3,8 +3,10 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import ParticlesBackground from "../src/components/ParticlesBackground.tsx/ParticlesBackground";
 import Compass from "../src/components/Compass/Compass";
-import { faSortDown } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faSortDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Link from "next/link";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -42,6 +44,31 @@ export default function App({ Component, pageProps }: AppProps) {
           </div>
         </div>
         <Component {...pageProps} />
+        <div
+          className="flex flex-col gap-4 w-full items-center justify-center p-4 h-[200px]"
+          style={{ bottom: 40 }}
+        >
+          <div className="flex gap-4 text-slate-600 ">
+            <a href="https://github.com/zerozelta" target={"_blank"} rel="noreferrer">
+              <FontAwesomeIcon
+                icon={faGithub}
+                style={{ width: 30, height: 30 }}
+              ></FontAwesomeIcon>
+            </a>
+            <a href="https://www.linkedin.com/in/aldo-cesar/" target={"_blank"} rel="noreferrer">
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                style={{ width: 30, height: 30 }}
+              ></FontAwesomeIcon>
+            </a>
+            <Link href={"/contact"}>
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                style={{ width: 30, height: 30 }}
+              ></FontAwesomeIcon>
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );

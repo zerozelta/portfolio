@@ -3,12 +3,13 @@ import { useEffect, useRef } from "react";
 import { animated, useSpring } from "@react-spring/web";
 import CompassIcon from "../../icons/CompassIcon";
 import styles from "./Compass.module.scss";
-import { random } from "../../lib/Utils";
+import { isMobile, random } from "../../lib/Utils";
 
 type CompassProps = {};
 
-const Compass = ({}: CompassProps) => {
+const Compass = ({ }: CompassProps) => {
   const degrees = useRef(90);
+  const lastScrollTop = useRef(0);
 
   const [{ rotate }, api] = useSpring(() => ({
     rotate: degrees.current,
@@ -17,16 +18,19 @@ const Compass = ({}: CompassProps) => {
 
   const SVGRef = useRef<HTMLElement>();
 
+
   useEffect(() => {
     var offset = SVGRef.current!.getBoundingClientRect();
     var center_x = offset.left + offset.width / 2;
     var center_y = offset.top + offset.height / 2;
-    window.document.body.addEventListener(
+
+    window.document.addEventListener(
       "mousemove",
       (e) => {
+        if (isMobile()) return;
         if (SVGRef.current) {
-          var mouse_x = e.pageX;
-          var mouse_y = e.pageY;
+          var mouse_x = e.clientX;
+          var mouse_y = e.clientY;
           var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
           degrees.current = radians * (180 / Math.PI) * -1 + 180;
           api({ rotate: degrees.current });

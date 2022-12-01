@@ -26,7 +26,6 @@ a {
   box-sizing: border-box;
 }
 
-
 .ripple {
   position: relative;
   user-select: none;
@@ -82,6 +81,17 @@ a {
 .ripple:active:after {
   opacity: 0.15;
   transition: 0s;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 @media (prefers-color-scheme: dark) {

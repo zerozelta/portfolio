@@ -35,31 +35,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div
-        className="flex flex-col gap-4 absolute w-full items-center justify-center"
-        style={{ bottom: 40 }}
-      >
-        <div className="flex gap-4 text-slate-600 ">
-          <a href="https://github.com/zerozelta" target={"_blank"} rel="noreferrer">
-            <FontAwesomeIcon
-              icon={faGithub}
-              style={{ width: 30, height: 30 }}
-            ></FontAwesomeIcon>
-          </a>
-          <a href="https://www.linkedin.com/in/aldo-cesar/" target={"_blank"} rel="noreferrer">
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              style={{ width: 30, height: 30 }}
-            ></FontAwesomeIcon>
-          </a>
-          <Link href={"/contact"}>
-            <FontAwesomeIcon
-              icon={faEnvelope}
-              style={{ width: 30, height: 30 }}
-            ></FontAwesomeIcon>
-          </Link>
-        </div>
-      </div>
+      
     </div>
   );
 }
