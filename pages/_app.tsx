@@ -3,10 +3,9 @@ import type { AppProps } from "next/app";
 import Head from "next/head";
 import ParticlesBackground from "../src/components/ParticlesBackground.tsx/ParticlesBackground";
 import Compass from "../src/components/Compass/Compass";
-import { faEnvelope, faSortDown } from "@fortawesome/free-solid-svg-icons";
+import { faSortDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import Link from "next/link";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -35,7 +34,7 @@ export default function App({ Component, pageProps }: AppProps) {
               <img src="/static/flags/us.svg" width={20}></img>
             </div>
             <div className="flex text-xs gap-2">
-              EN{" "}
+              EN
               <FontAwesomeIcon
                 icon={faSortDown}
                 style={{ position: "relative", width: 15, height: 15, top: -3 }}
@@ -69,12 +68,14 @@ export default function App({ Component, pageProps }: AppProps) {
                 style={{ width: 30, height: 30 }}
               ></FontAwesomeIcon>
             </a>
+            {/**
             <Link href={"/contact"}>
               <FontAwesomeIcon
                 icon={faEnvelope}
                 style={{ width: 30, height: 30 }}
               ></FontAwesomeIcon>
             </Link>
+             */}
           </div>
         </div>
       </div>

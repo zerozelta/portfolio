@@ -59,9 +59,9 @@ export default function Home() {
       <div className="flex flex-col items-center w-full h-full flex-1 m-auto max-w-[680px] gap-10 p-2">
         <div className="flex flex-col justify-center items-center text-center gap-4">
           <div>
-            Aldo César
+            Aldo César Gutiérrez Gtz.
             <br />
-            Gutiérrez Gutiérrez
+            <strong>(zerozelta)</strong>
           </div>
 
           <div className="flex p-2 rounded-full overflow-hidden bg-white border-4 border-slate-100 w-fit">
@@ -71,15 +71,15 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-row items-center justify-center font-bold text-blue-500 gap-2">
-            <img src="/static/flags/mx.svg" height={25} width={25}></img>
+            <img src="/static/flags/mx.svg" height={22} width={22}></img>
             <div>FullStack developer</div>
           </div>
 
           <div className="block w-full rounded-lg text-justify">
             <strong>Software developer Engineer</strong> by the Polytechnic
             University of Aguascalientes. Self-taught and programing
-            enthusiastic since I was 13 years old. with experience mainly in{" "}
-            <strong>software design </strong> and{" "}
+            enthusiastic since I was 13 years old. with experience mainly in
+            <strong>software design </strong> and
             <strong>web development technologies</strong>.
           </div>
 
@@ -129,13 +129,14 @@ export default function Home() {
                 <p>
                   I was participate in an international homebrew showcase for
                   the console Play Station Portable Scenery Beta 2011 tournament
-                  with the{" "}
+                  with the
                   <a
                     href="https://psp.scenebeta.com/noticia/fishell"
                     target={"_blank"}
                     rel="noreferrer"
                     className="text-blue-500"
                   >
+                    {" "}
                     Project Fishell
                   </a>
                 </p>
