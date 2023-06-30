@@ -6,7 +6,7 @@
                 "name":"JavaScript",
                 "url":"/static/img/skills/js.png",
                 "level": 3,
-                "years": 5
+                "years": 6
             },
             {
                 "name":"TypeScript",
@@ -18,7 +18,7 @@
                 "name":"ReactJS",
                 "url":"/static/img/skills/reactjs.png",
                 "level": 3,
-                "years": 4
+                "years": 5
             },
             {
                 "name":"GraphQL",
