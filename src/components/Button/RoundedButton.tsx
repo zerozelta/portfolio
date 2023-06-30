@@ -3,15 +3,12 @@ import classNames from "classnames";
 type RoundedButtonProps = {
   size: number;
   dark?: boolean;
-} & React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->;
+} & React.DetailedHTMLProps<React.AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>
 
 const RoundedButton = (props: RoundedButtonProps) => {
   let { children, className, dark, ...btnProps } = props;
   return (
-    <div
+    <a
       className={classNames(
         "flex flex-col justify-center items-center rounded-[50%] overflow-hidden ripple",
         className,
@@ -21,7 +18,7 @@ const RoundedButton = (props: RoundedButtonProps) => {
       {...btnProps}
     >
       {children}
-    </div>
+    </a>
   );
 };
 

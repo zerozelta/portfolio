@@ -29,25 +29,25 @@ export default function Home() {
     <div className="flex w-full h-full flex-1 text-sm sm:text-lg">
       <div className="flex flex-col gap-2 p-2">
         <div className="sticky top-2 flex flex-col gap-2 text-blue-500">
-          <RoundedButton dark size={40}>
+          <RoundedButton dark size={40} href="#myself">
             <FontAwesomeIcon icon={faUser} style={{ width: 22, height: 22 }} />
           </RoundedButton>
-          <RoundedButton dark size={40}>
+          <RoundedButton dark size={40} href="#skills">
             <FontAwesomeIcon icon={faStar} style={{ width: 22, height: 22 }} />
           </RoundedButton>
-          <RoundedButton dark size={40}>
+          <RoundedButton dark size={40} href="#achievements">
             <FontAwesomeIcon
               icon={faTrophy}
               style={{ width: 22, height: 22 }}
             />
           </RoundedButton>
-          <RoundedButton dark size={40}>
+          <RoundedButton dark size={40} href="#experience">
             <FontAwesomeIcon
               icon={faBookBookmark}
               style={{ width: 22, height: 22 }}
             />
           </RoundedButton>
-          <RoundedButton dark size={40}>
+          <RoundedButton dark size={40} href="#languages">
             <FontAwesomeIcon
               icon={faLanguage}
               style={{ width: 22, height: 22 }}
@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center w-full h-full flex-1 m-auto max-w-[680px] gap-10 p-2">
+      <div className="flex flex-col items-center w-full h-full flex-1 m-auto max-w-[680px] gap-10 p-2" id="myself">
         <div className="flex flex-col justify-center items-center text-center gap-4">
           <div>
             Aldo César Gutiérrez Gtz.
@@ -72,7 +72,7 @@ export default function Home() {
           </div>
           <div className="flex flex-row items-center justify-center font-bold text-blue-500 gap-2">
             <img src="/static/flags/mx.svg" height={22} width={22}></img>
-            <div>FullStack developer</div>
+            <div>FullStack Developer</div>
           </div>
 
           <div className="block w-full rounded-lg text-justify">
