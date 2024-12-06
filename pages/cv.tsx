@@ -56,7 +56,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center w-full h-full flex-1 m-auto max-w-[680px] gap-10 p-2" id="myself">
+      <div className="flex flex-col items-center w-full h-full flex-1 m-auto max-w-[680px] gap-11 p-2" id="myself">
         <div className="flex flex-col justify-center items-center text-center gap-4">
           <div>
             Aldo César Gutiérrez Gtz.
