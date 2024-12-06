@@ -76,11 +76,11 @@ export default function Home() {
           </div>
 
           <div className="block w-full rounded-lg text-justify">
-            <strong>Software developer Engineer</strong> by the Polytechnic
+            <strong>Software Engineer</strong> by the Polytechnic
             University of Aguascalientes. Self-taught and programing
-            enthusiastic since I was 13 years old. with experience mainly in
-            <strong>software design </strong> and
-            <strong>web development technologies</strong>.
+            enthusiastic since I was 13 years old. with experience mainly in{' '}
+            <strong>software design, user experience </strong> and{' '}
+            <strong>web development</strong>.
           </div>
 
           <div className="flex flex-row justify-start w-full gap-1">
@@ -88,7 +88,7 @@ export default function Home() {
               Self-taught
             </div>
             <div className="rounded-md py-2 px-2 bg-slate-500 text-white text-xs w-fit whitespace-nowrap">
-              Leadership
+              Persistent
             </div>
             <div className="rounded-md py-2 px-2 bg-slate-500 text-white text-xs w-fit whitespace-nowrap">
               Creative
@@ -179,7 +179,7 @@ export default function Home() {
 
         <Section title="Languages" id="languages" icon={faLanguage}>
           <div>Spanish (Native)</div>
-          <div>English (B1 TOEFL 580pts)</div>
+          <div>English B2 (TOEFL 580pts)</div>
         </Section>
       </div>
     </div>
